@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Rwanda | Discover the Land of a Thousand Hills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        header {
+            background: #073b2b;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #f4c542;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(#0006,#0007),
+            url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero a {
+            background: #e5b82d;
+            color: #073b2b;
+            padding: 14px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #073b2b;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .places {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .place {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px #0002;
+            text-align: left;
+        }
+
+        .place img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .place h3 {
+            color: #073b2b;
+            padding: 15px 15px 5px;
+        }
+
+        .place p {
+            padding: 5px 15px 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #073b2b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+            nav a {
+                margin-left: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Explore Rwanda 🇷🇼</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#places">Places</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Discover the Beauty of Rwanda</h1>
+    <p>Explore the Land of a Thousand Hills.</p>
+    <a href="#places">Explore Now</a>
+</section>
+
+<section class="section" id="places">
+    <h2>Discover Rwanda</h2>
+    <p>Explore some of Rwanda's beautiful destinations.</p>
+
+    <div class="places">
+        <div class="place">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African wildlife">
+            <h3>Akagera National Park</h3>
+            <p>Discover wildlife and beautiful savannah landscapes.</p>
+        </div>
+
+        <div class="place">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Mountain landscape">
+            <h3>Volcanoes National Park</h3>
+            <p>Explore Rwanda's magnificent mountain scenery.</p>
+        </div>
+
+        <div class="place">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600" alt="Lake scenery">
+            <h3>Lake Kivu</h3>
+            <p>Enjoy beautiful lake views and peaceful surroundings.</p>
+        </div>
+
+        <div class="place">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City">
+            <h3>Kigali City</h3>
+            <p>Experience Rwanda's vibrant and modern capital.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>About Explore Rwanda</h2>
+    <p>Explore Rwanda is a platform designed to help visitors discover Rwanda's tourism, culture and beautiful destinations.</p>
+</section>
+
+<footer>
+    <p>© 2026 Explore Rwanda. Discover Rwanda 🇷🇼</p>
+</footer>
+
+</body>
+</html>
