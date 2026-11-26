@@ -2,188 +2,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Rwanda | Discover the Land of a Thousand Hills</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Rwanda | Discover the Land of a Thousand Hills</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #222;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        header {
-            background: #073b2b;
-            color: white;
-            padding: 22px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    color: #26332d;
+    line-height: 1.6;
+}
 
-        header h2 {
-            color: #f4c542;
-        }
+header {
+    background: #073b2b;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 18px;
-        }
+.logo {
+    color: #f4c542;
+    font-size: 25px;
+    font-weight: bold;
+}
 
-        .hero {
-            min-height: 480px;
-            background: linear-gradient(#0006,#0007),
-            url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 30px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 18px;
-        }
+nav a:hover {
+    color: #f4c542;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
+.hero {
+    min-height: 560px;
+    background:
+    linear-gradient(#0008,#0008),
+    url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600')
+    center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
 
-        .hero a {
-            background: #e5b82d;
-            color: #073b2b;
-            padding: 14px 28px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.hero h1 {
+    font-size: 52px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
 
-        .section {
-            padding: 55px 8%;
-            text-align: center;
-        }
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
 
-        .section h2 {
-            color: #073b2b;
-            margin-bottom: 15px;
-            font-size: 30px;
-        }
+.btn {
+    display: inline-block;
+    background: #f4c542;
+    color: #073b2b;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-        .places {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
+.btn:hover {
+    background: white;
+}
 
-        .place {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 12px #0002;
-            text-align: left;
-        }
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
 
-        .place img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-        }
+.section h2 {
+    color: #073b2b;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
 
-        .place h3 {
-            color: #073b2b;
-            padding: 15px 15px 5px;
-        }
+.places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
 
-        .place p {
-            padding: 5px 15px 20px;
-            line-height: 1.5;
-        }
+.place {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #0002;
+    text-align: left;
+    transition: 0.3s;
+}
 
-        footer {
-            background: #073b2b;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+.place:hover {
+    transform: translateY(-7px);
+}
 
-        @media(max-width:600px) {
-            .hero h1 {
-                font-size: 34px;
-            }
-            nav a {
-                margin-left: 5px;
-            }
-        }
-    </style>
+.place img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.place h3 {
+    color: #073b2b;
+    padding: 15px 15px 5px;
+}
+
+.place p {
+    padding: 5px 15px 20px;
+}
+
+.experience {
+    background: #f1f6f2;
+}
+
+.about {
+    background: #073b2b;
+    color: white;
+}
+
+.about h2 {
+    color: #f4c542;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+footer {
+    background: #05291f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h2>Explore Rwanda 🇷🇼</h2>
+    <div class="logo">Explore Rwanda 🇷🇼</div>
+
     <nav>
         <a href="#home">Home</a>
-        <a href="#places">Places</a>
+        <a href="#places">Destinations</a>
+        <a href="#experiences">Experiences</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero" id="home">
     <h1>Discover the Beauty of Rwanda</h1>
     <p>Explore the Land of a Thousand Hills.</p>
-    <a href="#places">Explore Now</a>
+    <a href="#places" class="btn">Explore Rwanda</a>
 </section>
 
 <section class="section" id="places">
-    <h2>Discover Rwanda</h2>
-    <p>Explore some of Rwanda's beautiful destinations.</p>
+    <h2>Discover Our Destinations</h2>
+    <p>Experience the beautiful places that make Rwanda special.</p>
 
     <div class="places">
+
         <div class="place">
             <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African wildlife">
             <h3>Akagera National Park</h3>
-            <p>Discover wildlife and beautiful savannah landscapes.</p>
+            <p>Discover wildlife, nature and beautiful savannah landscapes.</p>
         </div>
 
         <div class="place">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Mountain landscape">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Mountain scenery">
             <h3>Volcanoes National Park</h3>
-            <p>Explore Rwanda's magnificent mountain scenery.</p>
+            <p>Explore magnificent mountains and Rwanda's natural beauty.</p>
         </div>
 
         <div class="place">
             <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600" alt="Lake scenery">
             <h3>Lake Kivu</h3>
-            <p>Enjoy beautiful lake views and peaceful surroundings.</p>
+            <p>Enjoy peaceful surroundings and beautiful lake views.</p>
         </div>
 
         <div class="place">
             <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City">
             <h3>Kigali City</h3>
-            <p>Experience Rwanda's vibrant and modern capital.</p>
+            <p>Experience Rwanda's vibrant and modern capital city.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section experience" id="experiences">
+    <h2>Experience Rwanda</h2>
+    <p>Discover more than destinations. Discover unforgettable experiences.</p>
+
+    <div class="places">
+        <div class="place">
+            <h3>🌿 Nature</h3>
+            <p>Explore Rwanda's beautiful landscapes and national parks.</p>
+        </div>
+
+        <div class="place">
+            <h3>🎭 Culture</h3>
+            <p>Discover Rwandan traditions, art and cultural heritage.</p>
+        </div>
+
+        <div class="place">
+            <h3>🏞️ Adventure</h3>
+            <p>Enjoy outdoor activities and mountain scenery.</p>
         </div>
     </div>
 </section>
 
-<section class="section" id="about">
+<section class="section about" id="about">
     <h2>About Explore Rwanda</h2>
-    <p>Explore Rwanda is a platform designed to help visitors discover Rwanda's tourism, culture and beautiful destinations.</p>
+    <p>
+        Explore Rwanda is a tourism platform created to showcase
+        Rwanda's beauty, culture, wildlife and amazing destinations.
+        Our mission is to help visitors discover the Land of a
+        Thousand Hills and experience its unforgettable attractions.
+    </p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Interested in discovering Rwanda? Get in touch with us.</p>
+    <a href="mailto:info@explorerwanda.com" class="btn">Email Us</a>
 </section>
 
 <footer>
-    <p>© 2026 Explore Rwanda. Discover Rwanda 🇷🇼</p>
+    <p>© 2026 Explore Rwanda. All rights reserved. 🇷🇼</p>
+    <p>Discover the Land of a Thousand Hills.</p>
 </footer>
 
 </body>
