@@ -14,6 +14,90 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+<style>
+.destinations {
+  padding: 60px 7%;
+  background: #f5f8f6;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.destinations h2 {
+  color: #123d2a;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.destinations .intro {
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  color: #17643d;
+  padding: 0 15px;
+}
+
+.destination-card p {
+  color: #555;
+  padding: 0 15px 15px;
+  line-height: 1.6;
+}
+</style>
+
+<section class="destinations" id="destinations">
+  <h2>Discover Rwanda</h2>
+  <p class="intro">Explore the beauty of the Land of a Thousand Hills.</p>
+
+  <div class="destination-grid">
+
+    <div class="destination-card">
+      <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African wildlife">
+      <h3>Akagera National Park</h3>
+      <p>Discover wildlife, beautiful landscapes and unforgettable safari experiences.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Beautiful lake and mountains">
+      <h3>Lake Kivu</h3>
+      <p>Enjoy peaceful lake views, beautiful beaches and relaxing experiences.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600" alt="Green forest">
+      <h3>Nyungwe National Park</h3>
+      <p>Explore beautiful forests, nature trails and amazing biodiversity.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600" alt="City landscape">
+      <h3>Kigali City</h3>
+      <p>Experience Rwanda's vibrant capital, culture, history and modern lifestyle.</p>
+    </div>
+
+  </div>
+</section>
+
 
 body {
     font-family: Arial, sans-serif;
