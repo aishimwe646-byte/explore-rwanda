@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explore Rwanda | Land of a Thousand Hills</title>
+<title>Explore Rwanda | Discover Rwanda</title>
 
 <style>
 * {
@@ -22,12 +22,12 @@ body {
 
 header {
     background: #073b2b;
-    color: white;
-    padding: 20px 7%;
+    padding: 18px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo {
@@ -36,10 +36,15 @@ header {
     font-weight: bold;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 8px;
     font-weight: bold;
 }
 
@@ -48,7 +53,7 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 520px;
+    min-height: 450px;
     background:
     linear-gradient(#0007,#0007),
     url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600")
@@ -63,23 +68,23 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 46px;
 }
 
 .hero p {
-    font-size: 21px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin: 15px;
 }
 
 .btn {
     display: inline-block;
     background: #f4c542;
     color: #073b2b;
-    padding: 14px 30px;
+    padding: 12px 25px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .section {
@@ -89,47 +94,47 @@ nav a:hover {
 
 .section h2 {
     color: #073b2b;
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
-.places {
+.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-    gap: 25px;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+    gap: 24px;
     margin-top: 35px;
 }
 
-.place {
+.card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px #0002;
     text-align: left;
-    transition: 0.3s;
 }
 
-.place:hover {
-    transform: translateY(-5px);
-}
-
-.place img {
+.card img {
     width: 100%;
-    height: 210px;
+    height: 200px;
     object-fit: cover;
 }
 
-.place h3 {
+.card h3 {
     color: #073b2b;
     padding: 15px 15px 5px;
 }
 
-.place p {
+.card p {
     padding: 5px 15px 20px;
 }
 
 .experience {
     background: #f1f6f2;
+}
+
+.hotels {
+    background: #fffdf5;
 }
 
 .about {
@@ -147,48 +152,8 @@ nav a:hover {
 }
 
 .contact {
-    background: #f5f8f6;
+    background: #f1f6f2;
 }
-
-<section id="hotels" style="padding:60px 7%; background:#f1f6f2; text-align:center;">
-
-<h2 style="color:#073b2b; font-size:34px; margin-bottom:12px;">
-Hotels & Accommodation
-</h2>
-
-<p style="color:#555; margin-bottom:35px;">
-Find a comfortable place to stay during your visit to Rwanda.
-</p>
-
-<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:25px;">
-
-<div style="background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px #0002; text-align:left;">
-<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700" alt="Hotel accommodation" style="width:100%; height:200px; object-fit:cover;">
-<h3 style="color:#073b2b; padding:15px;">Kigali City Hotels</h3>
-<p style="padding:0 15px 20px;">Discover comfortable accommodation and enjoy the attractions of Rwanda's capital.</p>
-</div>
-
-<div style="background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px #0002; text-align:left;">
-<img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700" alt="Lakeside resort" style="width:100%; height:200px; object-fit:cover;">
-<h3 style="color:#073b2b; padding:15px;">Lake Kivu Stays</h3>
-<p style="padding:0 15px 20px;">Enjoy relaxing accommodation and beautiful views around Lake Kivu.</p>
-</div>
-
-<div style="background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px #0002; text-align:left;">
-<img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=700" alt="Nature lodge" style="width:100%; height:200px; object-fit:cover;">
-<h3 style="color:#073b2b; padding:15px;">Nature Lodges</h3>
-<p style="padding:0 15px 20px;">Experience peaceful surroundings and beautiful natural landscapes.</p>
-</div>
-
-</div>
-
-<p style="margin-top:30px;">
-<a href="#contact" style="display:inline-block; background:#f4c542; color:#073b2b; padding:13px 28px; text-decoration:none; border-radius:5px; font-weight:bold;">
-Ask About Accommodation
-</a>
-</p>
-
-</section>
 
 footer {
     background: #05291f;
@@ -198,17 +163,16 @@ footer {
 }
 
 @media(max-width:600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
     header {
         justify-content: center;
-        gap: 15px;
     }
 
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    nav a {
-        font-size: 13px;
+    nav {
+        justify-content: center;
     }
 }
 </style>
@@ -222,6 +186,7 @@ footer {
         <a href="#home">Home</a>
         <a href="#places">Destinations</a>
         <a href="#experiences">Experiences</a>
+        <a href="#hotels">Hotels</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -235,34 +200,32 @@ footer {
 
 <section class="section" id="places">
     <h2>Our Top Destinations</h2>
-    <p>Explore the amazing places that make Rwanda special.</p>
+    <p>Discover the amazing places that make Rwanda special.</p>
 
-    <div class="places">
-
-        <div class="place">
+    <div class="cards">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African wildlife">
             <h3>Akagera National Park</h3>
             <p>Discover wildlife and beautiful savannah landscapes.</p>
         </div>
 
-        <div class="place">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Mountain scenery">
             <h3>Volcanoes National Park</h3>
             <p>Explore magnificent mountains and natural beauty.</p>
         </div>
 
-        <div class="place">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600" alt="Lake scenery">
             <h3>Lake Kivu</h3>
-            <p>Enjoy peaceful surroundings and beautiful lake views.</p>
+            <p>Enjoy beautiful lake views and relaxing experiences.</p>
         </div>
 
-        <div class="place">
-            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City scenery">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City">
             <h3>Kigali City</h3>
-            <p>Experience Rwanda's vibrant and modern capital.</p>
+            <p>Experience Rwanda's vibrant capital city.</p>
         </div>
-
     </div>
 </section>
 
@@ -270,20 +233,43 @@ footer {
     <h2>Experience Rwanda</h2>
     <p>Discover unforgettable Rwandan experiences.</p>
 
-    <div class="places">
-        <div class="place">
+    <div class="cards">
+        <div class="card">
             <h3>🌿 Nature</h3>
             <p>Explore beautiful landscapes and national parks.</p>
         </div>
-
-        <div class="place">
+        <div class="card">
             <h3>🎭 Culture</h3>
             <p>Discover Rwandan traditions, art and heritage.</p>
         </div>
-
-        <div class="place">
+        <div class="card">
             <h3>🏞️ Adventure</h3>
             <p>Enjoy outdoor activities and mountain scenery.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section hotels" id="hotels">
+    <h2>Hotels & Accommodation</h2>
+    <p>Find comfortable places to stay during your visit to Rwanda.</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700" alt="Hotel accommodation">
+            <h3>Kigali City Hotels</h3>
+            <p>Discover comfortable accommodation in Rwanda's capital.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700" alt="Resort">
+            <h3>Lake Kivu Stays</h3>
+            <p>Enjoy relaxing accommodation near beautiful Lake Kivu.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=700" alt="Nature lodge">
+            <h3>Nature Lodges</h3>
+            <p>Experience peaceful surroundings and natural landscapes.</p>
         </div>
     </div>
 </section>
@@ -300,7 +286,7 @@ footer {
 
 <section class="section contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Interested in discovering Rwanda? Get in touch with us.</p>
+    <p>Interested in discovering Rwanda?</p>
     <p>More contact information will be added soon.</p>
 </section>
 
