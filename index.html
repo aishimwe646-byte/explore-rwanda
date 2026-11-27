@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Explore Rwanda | Land of a Thousand Hills</title>
 
 <style>
@@ -14,90 +13,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-<style>
-.destinations {
-  padding: 60px 7%;
-  background: #f5f8f6;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.destinations h2 {
-  color: #123d2a;
-  font-size: 32px;
-  margin-bottom: 12px;
-}
-
-.destinations .intro {
-  color: #666;
-  margin-bottom: 35px;
-}
-
-.destination-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-}
-
-.destination-card {
-  background: white;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.destination-card img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-}
-
-.destination-card h3 {
-  color: #17643d;
-  padding: 0 15px;
-}
-
-.destination-card p {
-  color: #555;
-  padding: 0 15px 15px;
-  line-height: 1.6;
-}
-</style>
-
-<section class="destinations" id="destinations">
-  <h2>Discover Rwanda</h2>
-  <p class="intro">Explore the beauty of the Land of a Thousand Hills.</p>
-
-  <div class="destination-grid">
-
-    <div class="destination-card">
-      <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="African wildlife">
-      <h3>Akagera National Park</h3>
-      <p>Discover wildlife, beautiful landscapes and unforgettable safari experiences.</p>
-    </div>
-
-    <div class="destination-card">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Beautiful lake and mountains">
-      <h3>Lake Kivu</h3>
-      <p>Enjoy peaceful lake views, beautiful beaches and relaxing experiences.</p>
-    </div>
-
-    <div class="destination-card">
-      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600" alt="Green forest">
-      <h3>Nyungwe National Park</h3>
-      <p>Explore beautiful forests, nature trails and amazing biodiversity.</p>
-    </div>
-
-    <div class="destination-card">
-      <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600" alt="City landscape">
-      <h3>Kigali City</h3>
-      <p>Experience Rwanda's vibrant capital, culture, history and modern lifestyle.</p>
-    </div>
-
-  </div>
-</section>
-
 
 body {
     font-family: Arial, sans-serif;
@@ -133,9 +48,9 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 560px;
+    min-height: 520px;
     background:
-    linear-gradient(#0008,#0008),
+    linear-gradient(#0007,#0007),
     url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600")
     center/cover;
     display: flex;
@@ -168,7 +83,7 @@ nav a:hover {
 }
 
 .section {
-    padding: 75px 8%;
+    padding: 65px 7%;
     text-align: center;
 }
 
@@ -182,7 +97,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .place {
@@ -191,6 +106,11 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 4px 15px #0002;
     text-align: left;
+    transition: 0.3s;
+}
+
+.place:hover {
+    transform: translateY(-5px);
 }
 
 .place img {
@@ -201,11 +121,11 @@ nav a:hover {
 
 .place h3 {
     color: #073b2b;
-    padding: 15px;
+    padding: 15px 15px 5px;
 }
 
 .place p {
-    padding: 0 15px 20px;
+    padding: 5px 15px 20px;
 }
 
 .experience {
@@ -224,6 +144,10 @@ nav a:hover {
 .about p {
     max-width: 750px;
     margin: auto;
+}
+
+.contact {
+    background: #f5f8f6;
 }
 
 footer {
@@ -254,7 +178,6 @@ footer {
 
 <header>
     <div class="logo">Explore Rwanda 🇷🇼</div>
-
     <nav>
         <a href="#home">Home</a>
         <a href="#places">Destinations</a>
@@ -271,7 +194,7 @@ footer {
 </section>
 
 <section class="section" id="places">
-    <h2>Discover Our Destinations</h2>
+    <h2>Our Top Destinations</h2>
     <p>Explore the amazing places that make Rwanda special.</p>
 
     <div class="places">
@@ -295,7 +218,7 @@ footer {
         </div>
 
         <div class="place">
-            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="City scenery">
             <h3>Kigali City</h3>
             <p>Experience Rwanda's vibrant and modern capital.</p>
         </div>
@@ -305,7 +228,7 @@ footer {
 
 <section class="section experience" id="experiences">
     <h2>Experience Rwanda</h2>
-    <p>Discover unforgettable experiences.</p>
+    <p>Discover unforgettable Rwandan experiences.</p>
 
     <div class="places">
         <div class="place">
@@ -335,15 +258,15 @@ footer {
     </p>
 </section>
 
-<section class="section" id="contact">
+<section class="section contact" id="contact">
     <h2>Contact Us</h2>
     <p>Interested in discovering Rwanda? Get in touch with us.</p>
-    <a href="mailto:info@explorerwanda.com" class="btn">Email Us</a>
+    <p>More contact information will be added soon.</p>
 </section>
 
 <footer>
     <p>© 2026 Explore Rwanda. All rights reserved. 🇷🇼</p>
-    <p>Discover the Land of a Thousand Hills.</p>
+    <p>Discover • Explore • Experience Rwanda.</p>
 </footer>
 
 </body>
